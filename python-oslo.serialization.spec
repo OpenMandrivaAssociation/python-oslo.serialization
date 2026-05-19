@@ -1,7 +1,7 @@
 %define module oslo_serialization
 
 Name:		python-oslo.serialization
-Version:	5.9.1
+Version:	5.10.0
 Release:	1
 Summary:	Oslo Serialization library
 License:	None
