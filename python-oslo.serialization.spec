@@ -2,9 +2,9 @@
 
 Name:		python-oslo.serialization
 Version:	5.11.0
-Release:	1
+Release:	2
 Summary:	Oslo Serialization library
-License:	None
+License:	Apache-2.0
 Group:		Development/Python
 URL:		https://pypi.org/project/oslo.serialization/
 Source0:	https://files.pythonhosted.org/packages/source/o/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
@@ -15,6 +15,9 @@ BuildRequires:	python%{pyver}dist(pbr)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
+
+%build -p
+export PBR_VERSION="%{version}"
 
 %description
 Oslo Serialization library
